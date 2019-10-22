@@ -136,6 +136,9 @@ body {
 }
 .main-context {
   margin: 5%;
+  border-radius: 2px;
+  height: 654px;
+  padding: 2rem;
 }
 .flex-nav {
   display: flex;
@@ -195,10 +198,14 @@ body {
 .container p,
 .container h1 {
   font-size: 44px;
-  color: white;
+  color: black;
 }
 .container .main-content {
-  background-color: lightblue;
+  background-color: #0e7fa5;
+  margin: 5%;
+  border-radius: 2px;
+  height: 654px;
+  padding: 2rem;
 }
 .container .mid-content {
   border: 2px dashed red;
