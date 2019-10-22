@@ -20,8 +20,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	font-size: 62.5%;
+	font-style: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -55,15 +55,62 @@ table {
 
 html, body {
 	height: 100%;
-	// background-color: red;
+	background-color: black;
 }
 
-html {
-	font-size: 62.5%;
-}
+// Preprocessing-I Code below here:
+
+//variables
+@font-color: white;
+@font-size: 44px;
+
+//mix-ins
 
 
-//main content section
-.main-content {
-	background-color: gray;
-}
+//nested @ mobile
+
+
+//nested selectors inside container
+.container {
+// container  start
+	border: 4px dashed coral;
+	// header
+			header {
+				display: flex;
+
+				nav {
+					border: 1px solid red;
+
+					a {
+						border: 1px solid grey;
+					}
+
+
+				}
+
+			}
+
+		//content sections
+		
+		.main-content, .mid-content, .end-content, nav a{
+			font-size: @font-size;
+			color: @font-color;
+		}
+
+
+				//mid content
+				.mid-content {
+					border: 2px dashed red;
+					
+					
+				}
+
+					//end content
+					.end-content {
+						border: 2px solid red;
+						
+						
+					}
+
+} // Container end
+

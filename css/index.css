@@ -86,8 +86,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  font-size: 62.5%;
+  font-style: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -133,10 +133,30 @@ table {
 html,
 body {
   height: 100%;
+  background-color: black;
 }
-html {
-  font-size: 62.5%;
+.container {
+  border: 4px dashed coral;
 }
-.main-content {
-  background-color: gray;
+.container header {
+  display: flex;
+}
+.container header nav {
+  border: 1px solid red;
+}
+.container header nav a {
+  border: 1px solid grey;
+}
+.container .main-content,
+.container .mid-content,
+.container .end-content,
+.container nav a {
+  font-size: 44px;
+  color: white;
+}
+.container .mid-content {
+  border: 2px dashed red;
+}
+.container .end-content {
+  border: 2px solid red;
 }
