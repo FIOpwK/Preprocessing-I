@@ -63,30 +63,47 @@ html, body {
 //variables
 @font-color: black;
 @font-size: 44px;
-@background-color: #8df;
+@background-color: rgb(14, 127, 165);
 
 //mix-ins
+
+.columize-text {
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.center-text {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-right: 2%;
+	margin-left: 2%;
+	font-size: @font-size;
+	padding: 2rem;
+}
 
 .main-context {
 	margin: 5%;
 	border-radius: 2px;
-	height: 654px;
+	// height: 654px;
 	padding: 2rem;
 
 }
 
 .mid-context {
 	display: flex;
-	
+	flex-wrap: wrap;
 	width: 50%;
-	
 }
 
 .flex-nav {
 	display: flex;
-	width: 100%;
-	justify-content: flex-end;
-
+	// width: 100%;
+	justify-content: space-around;
+	padding: 2rem;
+	margin-right: 2%;
+	margin-left: 2%;
 }
 
 .flex-class {
@@ -96,8 +113,6 @@ html, body {
 }
 
 .font-class {
-	font-size: 7rem;
-	color: maroon;
 	text-decoration: none;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -106,16 +121,18 @@ html, body {
 //nested @ mobile
 @media (max-width: 500px) {
 	header {
-
-		background-color: @background-color;
+		.center-text();
+		
 
 		nav {
 			.flex-nav();
+			.columize-text();
 		}
 
 		a {
 			.font-class();
 			.flex-class();
+			border-bottom: 1px solid;
 		}
 
 	}
@@ -125,18 +142,18 @@ html, body {
 //nested selectors inside container
 .container {
 // container  start
-	border: 4px dashed coral;
+	// border: 4px dashed coral;
 	// header
 			header {
 				// display: flex;
 
 				nav {
-					border: 1px solid red;
+					// border: 1px solid red;
+					background-color: @background-color;
 					.flex-nav();
 
 					a {
-						border: 1px solid grey;
-						.flex-class();
+						.font-class();
 						
 					}
 
@@ -147,25 +164,42 @@ html, body {
 
 		//content sections
 		
-		.main-content, .mid-content, .end-content, nav, a, p, h1{
+		.main-content, .mid-content, .end-content, nav, .mid-text, h1, h2 {
 			font-size: @font-size;
 			color: @font-color;
-			// .font-class();
+			.font-class();
 		}
 
 				.main-content {
-					background-color: rgb(14, 127, 165);
+					background-color: @background-color;
 					.main-context();
+					.center-text();
+
+					.pic {
+						border: 2px solid;
+						padding: 2rem;
+					}
+
+					button {
+						height: 40px;
+						padding: 1rem;
+						margin: 2%;
+					}
 				}
 
 
 				//mid content
 				.mid-content {
+				
 					border: 2px dashed red;
 					.mid-context();
+					.center-text();
+					width: 96%;
+
 					
 					.mid-text {
-						border: 2px solid palevioletred;
+						border: 2px solid;
+						// .center-text();	
 					}
 					
 				}
@@ -173,9 +207,15 @@ html, body {
 					//end content
 					.end-content {
 						border: 2px solid red;
-						
+						.center-text();
 						
 					}
+
+						footer {
+							border: 1px solid blue;
+							.center-text();
+							background-color: @background-color;
+						}
 
 } // Container end
 
