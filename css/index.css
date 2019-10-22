@@ -140,6 +140,10 @@ body {
   height: 654px;
   padding: 2rem;
 }
+.mid-context {
+  display: flex;
+  width: 50%;
+}
 .flex-nav {
   display: flex;
   width: 100%;
@@ -209,6 +213,11 @@ body {
 }
 .container .mid-content {
   border: 2px dashed red;
+  display: flex;
+  width: 50%;
+}
+.container .mid-content .mid-text {
+  border: 2px solid palevioletred;
 }
 .container .end-content {
   border: 2px solid red;
