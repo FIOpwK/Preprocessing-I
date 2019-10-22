@@ -63,12 +63,20 @@ html, body {
 //variables
 @font-color: white;
 @font-size: 44px;
+@background-color: #8df;
 
 //mix-ins
 
 
 //nested @ mobile
+@media (max-width: 500px) {
+	header {
 
+		background-color: @background-color;
+
+	}
+	
+}
 
 //nested selectors inside container
 .container {
