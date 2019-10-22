@@ -67,6 +67,11 @@ html, body {
 
 //mix-ins
 
+.main-context {
+	margin: 5%;
+
+}
+
 .flex-nav {
 	display: flex;
 	width: 100%;
@@ -81,9 +86,10 @@ html, body {
 }
 
 .font-class {
-	font-size: 1rem;
+	font-size: 7rem;
 	color: maroon;
 	text-decoration: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -134,12 +140,18 @@ html, body {
 		.main-content, .mid-content, .end-content, nav, a, p, h1{
 			font-size: @font-size;
 			color: @font-color;
+			// .font-class();
 		}
+
+				.main-content {
+					background-color: lightblue;
+				}
 
 
 				//mid content
 				.mid-content {
 					border: 2px dashed red;
+					
 					
 					
 				}
