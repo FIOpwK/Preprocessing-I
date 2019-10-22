@@ -135,9 +135,36 @@ body {
   height: 100%;
   background-color: black;
 }
+.flex-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.flex-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+.font-class {
+  font-size: 10px;
+  color: maroon;
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   header {
     background-color: #8df;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+  }
+  header a {
+    font-size: 10px;
+    color: maroon;
+    text-decoration: none;
   }
 }
 .container {
@@ -148,6 +175,9 @@ body {
 }
 .container header nav {
   border: 1px solid red;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 .container header nav a {
   border: 1px solid grey;

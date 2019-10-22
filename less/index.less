@@ -67,12 +67,40 @@ html, body {
 
 //mix-ins
 
+.flex-nav {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+
+}
+
+.flex-class {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1%;
+}
+
+.font-class {
+	font-size: 10px;
+	color: maroon;
+	text-decoration: none;
+}
+
 
 //nested @ mobile
 @media (max-width: 500px) {
 	header {
 
 		background-color: @background-color;
+
+		nav {
+			.flex-class();
+		}
+
+		a {
+			.font-class();
+		}
 
 	}
 	
@@ -88,6 +116,7 @@ html, body {
 
 				nav {
 					border: 1px solid red;
+					.flex-nav();
 
 					a {
 						border: 1px solid grey;
