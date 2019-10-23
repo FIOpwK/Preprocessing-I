@@ -241,6 +241,7 @@ body {
 .container .main-content .pic {
   border: 2px solid;
   padding: 2rem;
+  background-color: black;
 }
 .container .main-content button {
   height: 40px;
