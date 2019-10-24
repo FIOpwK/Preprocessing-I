@@ -210,6 +210,9 @@ body {
   margin: 2% auto;
   width: 50%;
 }
+.margin-class {
+  margin: 2%;
+}
 @media (max-width: 500px) {
   header {
     display: flex;

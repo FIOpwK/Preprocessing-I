@@ -158,6 +158,9 @@ html, body {
 	width: 50%;
 }
 
+.margin-class {
+	margin: 2%;
+}
 
 
 //nested @ mobile
@@ -192,11 +195,11 @@ html, body {
 	.mid-content {
 
 		#work {
-			margin: 2%;
+			.margin-class();
 		}
 
 		#skills {
-			margin: 2%;
+			.margin-class();
 		}
 
 
@@ -205,12 +208,13 @@ html, body {
 	.end-content {
 
 		#about {
-			margin: 2%;
+			.margin-class();
+			.scroll-up();
 
 		}
 
 		#contact {
-			margin: 2%;
+			.margin-class();
 		}
 		p {
 			font-size: @font-size - 20px;
