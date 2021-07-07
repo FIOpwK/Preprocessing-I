@@ -210,9 +210,6 @@ body {
   margin: 2% auto;
   width: 50%;
 }
-.margin-class {
-  margin: 2%;
-}
 @media (max-width: 500px) {
   header {
     display: flex;
@@ -381,3 +378,4 @@ body {
   margin-right: 5%;
   margin-left: 5%;
 }
+/*# sourceMappingURL=index.css.map */
